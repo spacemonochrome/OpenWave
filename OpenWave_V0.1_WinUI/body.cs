@@ -366,5 +366,14 @@ namespace OpenWave_V0._1_WinUI
                 triggerselected = false;
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "https://github.com/spacemonochrome/OpenWave",
+                UseShellExecute = true
+            });
+        }
     }
 }

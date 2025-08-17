@@ -63,3 +63,4 @@ C:\Users\hfk47\source\repos\OpenWave_V0.1_WinUI\obj\Release\OpenWave_V0.1_WinUI.
 C:\Users\hfk47\source\repos\OpenWave_V0.1_WinUI\obj\Release\OpenWave.50659CB6.Up2Date
 C:\Users\hfk47\source\repos\OpenWave_V0.1_WinUI\obj\Release\OpenWave_V0.1_WinUI.exe
 C:\Users\hfk47\source\repos\OpenWave_V0.1_WinUI\obj\Release\OpenWave_V0.1_WinUI.pdb
+C:\Users\hfk47\source\repos\OpenWave_V0.1_WinUI\obj\Release\OpenWave_V0.1_WinUI.exe.config
