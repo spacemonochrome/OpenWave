@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|c:\\users\\hfk47\\source\\repos\\openwave_v0.1_winui\\body.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|solutionrelative:body.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|solutionrelative:body.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|solutionrelative:body.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OpenWave_V0.1_WinUI||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|c:\\users\\hfk47\\source\\repos\\openwave_v0.1_winui\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OpenWave_V0.1_WinUI",
+              "DocumentMoniker": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\OpenWave_V0.1_WinUI.csproj",
+              "RelativeDocumentMoniker": "OpenWave_V0.1_WinUI.csproj",
+              "ToolTip": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\OpenWave_V0.1_WinUI.csproj",
+              "RelativeToolTip": "OpenWave_V0.1_WinUI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-17T13:10:42.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "body.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.Designer.cs",
+              "RelativeDocumentMoniker": "body.Designer.cs",
+              "ToolTip": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.Designer.cs",
+              "RelativeToolTip": "body.Designer.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAvwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T17:04:49.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "body.cs",
+              "DocumentMoniker": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.cs",
+              "RelativeDocumentMoniker": "body.cs",
+              "ToolTip": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.cs",
+              "RelativeToolTip": "body.cs",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAswC4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T23:02:24.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "body.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.cs",
+              "RelativeDocumentMoniker": "body.cs",
+              "ToolTip": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.cs [Tasar\u0131m]",
+              "RelativeToolTip": "body.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T22:58:06.72Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+../Core/Src/main.c:77:6:DWT_Init	4	static
+../Core/Src/main.c:84:10:DWT_GetMicros	4	static
+../Core/Src/main.c:89:10:DWT_GetDeltaMicros	24	static
+../Core/Src/main.c:102:6:send_adc_data	16	static
+../Core/Src/main.c:122:6:HAL_ADC_ConvCpltCallback	16	static
+../Core/Src/main.c:127:6:My_USB_RxHandler	16	static
+../Core/Src/main.c:149:5:main	16	static
+../Core/Src/main.c:216:6:SystemClock_Config	88	static
+../Core/Src/main.c:264:13:MX_ADC1_Init	8	static
+../Core/Src/main.c:297:13:MX_DMA_Init	16	static
+../Core/Src/main.c:315:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:350:6:Error_Handler	4	static,ignoring_inline_asm
