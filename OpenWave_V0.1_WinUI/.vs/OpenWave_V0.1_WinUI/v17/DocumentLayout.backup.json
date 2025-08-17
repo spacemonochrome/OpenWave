@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|solutionrelative:body.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|c:\\users\\hfk47\\source\\repos\\openwave_v0.1_winui\\body.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|solutionrelative:body.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|solutionrelative:body.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B60C5556-178E-4BDB-BBB5-517FD83C5171}|OpenWave_V0.1_WinUI.csproj|solutionrelative:body.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OpenWave_V0.1_WinUI||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -28,7 +28,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -44,33 +44,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "body.Designer.cs",
               "DocumentMoniker": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.Designer.cs",
               "RelativeDocumentMoniker": "body.Designer.cs",
               "ToolTip": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.Designer.cs",
               "RelativeToolTip": "body.Designer.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAvwDcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAvwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T17:04:49.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "body.cs",
               "DocumentMoniker": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.cs",
               "RelativeDocumentMoniker": "body.cs",
               "ToolTip": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.cs",
               "RelativeToolTip": "body.cs",
-              "ViewState": "AgIAAAgBAAAAAAAAAAAswC4BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0BAAAAAAAAAAAqwF0BAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-14T23:02:24.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "body.cs [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\hfk47\\source\\repos\\OpenWave_V0.1_WinUI\\body.cs",
               "RelativeDocumentMoniker": "body.cs",

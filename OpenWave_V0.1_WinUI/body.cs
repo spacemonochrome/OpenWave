@@ -67,9 +67,7 @@ namespace OpenWave_V0._1_WinUI
                     Streamer1.ManageAxisLimits = false;
                 }
                 formsPlot1.Refresh();
-            };
-
-            
+            };           
         }
 
         public int TotalBlock = 5;
@@ -77,17 +75,14 @@ namespace OpenWave_V0._1_WinUI
         private byte[] buffer;
         private List<byte> tempBuffer = new List<byte>();
         private System.Timers.Timer timeoutTimer;
-        private const int TIMEOUT_MS = 40; // ms cinsinden
+        private const int TIMEOUT_MS = 40; 
 
         private void ADCRun_Click(object sender, EventArgs e)
         {
             ADCRun.Enabled = false;
             ADCStop.Enabled = true;
-            PortDisconnect.Enabled = false;
-
-            
+            PortDisconnect.Enabled = false;            
             SeriPort.Write("Start");
-
             SeriPort.BaseStream.ReadAsync(buffer, 0, buffer.Length);
 
         }
@@ -159,32 +154,94 @@ namespace OpenWave_V0._1_WinUI
                 timeoutTimer.Start();
             }
         }
+       
+
+        public bool triggerselected = false;
 
         private void OnBufferFull(byte[] data, int length)
         {
             this.BeginInvoke((Action)(() =>
             {
-                var sb = new StringBuilder();
-                int sampleCount = length / 2;
-                ushort[] samples16 = new ushort[sampleCount];
-
-                for (int i = 0, j = 0; i + 1 < length; i += 2, j++)
+                if (triggerselected == true)
                 {
-                    ushort value = BitConverter.ToUInt16(data, i); // little endian
-                    sb.AppendLine(value.ToString());
-                    samples16[j] = value;
+                    int sampleCount = length / 2;
+                    ushort[] samples16 = new ushort[sampleCount];
 
-                    // Grafik için ekle
-                    Streamer1.Add(value);
+                    for (int i = 0, j = 0; i + 1 < length; i += 2, j++)
+                    {
+                        samples16[j] = BitConverter.ToUInt16(data, i); // little endian
+                    }
+
+                    // ushort -> double
+                    double[] samples = samples16.Select(s => (double)s).ToArray();
+
+                    // --------- Trigger tabanlı hizalama ---------
+                    double triggerLevel = 2048;  // 12-bit ADC için ortalama seviye
+                    double hysteresis = 10;    // tetik kararı için küçük tampon
+                    bool risingEdge = true;  // yükselen kenar tetik
+
+                    int idx = FindTriggerIndex(samples, triggerLevel, hysteresis, risingEdge);
+                    if (idx > 0 && idx < samples.Length)
+                    {
+                        double[] aligned = new double[samples.Length];
+                        Array.Copy(samples, idx, aligned, 0, samples.Length - idx);
+                        Array.Copy(samples, 0, aligned, samples.Length - idx, idx);
+                        samples = aligned;
+                    }
+
+                    // ScottPlot için ekle
+                    foreach (var v in samples)
+                        Streamer1.Add(v);
+
+                    // FFT ve terminal
+                    ComputeFFT(samples);
                 }
 
-                // ushort -> double
-                double[] samples = samples16.Select(s => (double)s).ToArray();
+                else if (triggerselected == false)
+                {
+                    var sb = new StringBuilder();
+                    int sampleCount = length / 2;
+                    ushort[] samples16 = new ushort[sampleCount];
 
-                // FFT hesapla ve ScottPlot ile çiz
-                ComputeFFT(samples);
-                AppendToTerminalSafe(sb.ToString());
+                    for (int i = 0, j = 0; i + 1 < length; i += 2, j++)
+                    {
+                        ushort value = BitConverter.ToUInt16(data, i); // little endian
+                        sb.AppendLine(value.ToString());
+                        samples16[j] = value;
+
+                        // Grafik için ekle
+                        Streamer1.Add(value);
+                    }
+
+                    // ushort -> double
+                    double[] samples = samples16.Select(s => (double)s).ToArray();
+
+                    // FFT hesapla ve ScottPlot ile çiz
+                    ComputeFFT(samples);
+                }               
+
             }));
+        }
+
+        // Trigger index bulma fonksiyonu
+        private int FindTriggerIndex(double[] x, double level, double hyst, bool rising)
+        {
+            for (int i = 1; i < x.Length; i++)
+            {
+                if (rising)
+                {
+                    bool below = x[i - 1] <= level - hyst;
+                    bool above = x[i] >= level + hyst;
+                    if (below && above) return i;
+                }
+                else
+                {
+                    bool above = x[i - 1] >= level + hyst;
+                    bool below = x[i] <= level - hyst;
+                    if (above && below) return i;
+                }
+            }
+            return -1; // tetik yok
         }
 
         private void AppendToTerminalSafe(string text, int maxLines = 1000)
@@ -297,6 +354,17 @@ namespace OpenWave_V0._1_WinUI
             formsPlot2.Plot.YLabel("Genlik");
             formsPlot2.Refresh();
         }
-       
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                triggerselected = true;
+            }
+            else
+            {
+                triggerselected = false;
+            }
+        }
     }
 }

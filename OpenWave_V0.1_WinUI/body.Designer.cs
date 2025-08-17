@@ -43,6 +43,7 @@
             this.formsPlot2 = new ScottPlot.WinForms.FormsPlot();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // formsPlot1
@@ -121,7 +122,7 @@
             this.TerminalEkran.Location = new System.Drawing.Point(579, 37);
             this.TerminalEkran.Multiline = true;
             this.TerminalEkran.Name = "TerminalEkran";
-            this.TerminalEkran.Size = new System.Drawing.Size(118, 544);
+            this.TerminalEkran.Size = new System.Drawing.Size(207, 544);
             this.TerminalEkran.TabIndex = 4;
             // 
             // label1
@@ -184,12 +185,25 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "0 Hz";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox1.Location = new System.Drawing.Point(480, 51);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(72, 19);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "Trigger";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // body
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(713, 596);
+            this.ClientSize = new System.Drawing.Size(798, 596);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.formsPlot2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -205,8 +219,10 @@
             this.Controls.Add(this.ListComPort);
             this.Controls.Add(this.formsPlot1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "body";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OpenWave v0.1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -229,6 +245,7 @@
         private ScottPlot.WinForms.FormsPlot formsPlot2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
