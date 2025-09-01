@@ -1,5 +1,9 @@
 # OpenWave
 
+<img width="819" height="622" alt="image" src="https://github.com/user-attachments/assets/6e130990-a102-4f3a-badb-cc378f61b3b2" />
+
+
+
 ## English Description
 
 OpenWave is a dual-part project consisting of:
